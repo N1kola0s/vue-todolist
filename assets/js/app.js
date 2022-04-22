@@ -14,7 +14,7 @@ const app = new Vue (
                 },
                 {
                     text: 'Fare la spesa',
-                    done: true
+                    done: false
 
 
                 },
