@@ -50,16 +50,17 @@ body{
 ul>.item{
     line-height: 2.5rem;
     border-bottom: 1px solid lightgray;
+    cursor:pointer;
 
 }
 
-.sbarrato{
+.delete_task{
     text-decoration: line-through;
     color:red;
 }
 
 
-.fatto:after{
+.complete_task:after{
     content:"Fatto!";
     color:#00E165;
 }
