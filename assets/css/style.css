@@ -59,5 +59,15 @@ ul>.item{
 }
 
 
+.empty_tasks {
+    padding: 1.5rem;
+    background-color: #d3d3d385;
+    width: 80%;
+    border-radius:20px;
+    color:#00E165;
+    font-weight: bold;
+
+}
+
     
 

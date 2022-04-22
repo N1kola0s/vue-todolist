@@ -30,8 +30,16 @@ const app = new Vue (
 
             addTask(){
                 /* console.log('click ADD') */
-                this.tasks.push({text:this.newTask, done:false
-                });
+                
+                if(this.newTask != ''){
+                    this.tasks.push({text:this.newTask, done:false
+                    });
+                    
+                } else {
+                    alert('Hai dimenticato di inserire la tua task!')
+                }
+
+                this.newTask = '';
 
             },
 
@@ -60,7 +68,6 @@ const app = new Vue (
             }
         }
        
-
     }
 )
 

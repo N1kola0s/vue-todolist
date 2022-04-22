@@ -42,7 +42,7 @@
             </div>
             <!-- /.add_task -->
 
-            <section class= "list mt-5">
+            <section class= "list mt-5" v-if="tasks.length >0">
 
                 <ul class="mt-3 ps-0">
 
@@ -58,6 +58,8 @@
 
             </section>
             <!-- /.section -->
+
+            <p class="empty_tasks mt-5 d-flex justify-content-center" v-else> Oggi sei libero, vai a pascolare lontano dal pc! </p>
             
         </div>
         <!-- /.container -->
