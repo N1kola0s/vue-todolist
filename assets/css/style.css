@@ -59,6 +59,11 @@ ul>.item{
 }
 
 
+.fatto:after{
+    content:"Fatto!";
+    color:#00E165;
+}
+
 .empty_tasks {
     padding: 1.5rem;
     background-color: #d3d3d385;

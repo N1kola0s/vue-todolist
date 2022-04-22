@@ -50,9 +50,12 @@
                         
                         <span :class="task.done == true ? 'sbarrato' : ''" @click="doneTrue (index)">{{task.text}}</span>
 
+                        <span :class="task.done == true ? 'fatto' : ''"></span>
+
                         <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
                         
                     </li> 
+                    <!-- /.item -->
 
                 </ul>
 
