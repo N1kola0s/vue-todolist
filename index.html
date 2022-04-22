@@ -44,8 +44,8 @@
 
             <section class= "list mt-5 d-flex align-items-center">
                 <ul class="mt-3">
-                    <li v-for="(task,index) in tasks">
-                        <span>{{task.text}}</span>
+                    <li v-for="(task,index) in tasks" :class="task.done == true ? 'sbarrato' : ''">
+                        <span @click="doneTrue (index)">{{task.text}}</span>
                         <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
                     </li> 
                 </ul>

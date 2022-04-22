@@ -14,7 +14,7 @@ const app = new Vue (
                 },
                 {
                     text: 'Fare la spesa',
-                    done: false
+                    done: true
 
 
                 },
@@ -30,13 +30,9 @@ const app = new Vue (
 
             addTask(){
                 /* console.log('click ADD') */
-                this.tasks.push({text:this.newTask, done:true
+                this.tasks.push({text:this.newTask, done:false
                 });
 
-                
-                if(this.newTask.done === true){
-                    console.log('true')
-                } 
             },
 
             
@@ -44,8 +40,24 @@ const app = new Vue (
                 console.log('remove task', index);
                 this.tasks.splice(index, 1);
 
-            }
+            },
 
+            
+            doneTrue(index){
+                /* console.log('fatto', index); */
+                
+                if(this.tasks[index].done == false){
+
+                    this.tasks[index].done = true;
+
+                } else {
+
+                    this.tasks[index].done = false;
+                }
+                
+                console.log(this.tasks[index].done); 
+                
+            }
         }
        
 
