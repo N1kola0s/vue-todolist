@@ -3,7 +3,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
+    
 }
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+}
+
+.container{
+    width:800px;
+    margin:6rem auto;
+
+}
+
+.container .list{
+
+    background-color: lightgray;
+    width: 80%;
+}
+
+
+.add_task>input {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width:400px;
+    margin-right: 1rem;
+}
+
+.add_task>button {
+    padding: 0.5rem 1rem;
+    border: 1px solid gray ;
+    border-radius: 0.5rem;
+}
+
+
+
+
     
 
