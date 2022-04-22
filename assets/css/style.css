@@ -47,7 +47,7 @@ body{
 }
 
 
-.item{
+ul>.item{
     line-height: 2.5rem;
     border-bottom: 1px solid lightgray;
 
@@ -55,6 +55,7 @@ body{
 
 .sbarrato{
     text-decoration: line-through;
+    color:red;
 }
 
 
